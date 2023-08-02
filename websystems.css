@@ -1,0 +1,253 @@
+body {
+  background-image: url('/images/astronautbackground.jpg'); /* Found on UHD Paper https://www.uhdpaper.com/2019/07/astronaut-jellyfish-space-digital-art.html*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  
+}
+
+
+/* Top Nav Header Formatting */
+header {
+  background: #151515cc;
+  display: flex;
+  align-items: center;
+  padding: 10px 5%;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nameandlogo{
+  display:flex;
+  align-items:center;
+}
+.utslogo {
+  position:relative;
+  max-width: 9%;
+  margin-right: 10px;
+}
+
+/* Welcome text */
+.title{
+  color: #ffffffb1;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Name Formatting */
+.name {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #ffffffb1;
+}
+
+/* Navigation Formatting */
+nav ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+nav li {
+  margin-left: 40px;
+}
+
+nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  font-size: 16px;
+  color: #ccc;
+  
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+nav a::before {
+  background-color: #ccc;
+  width: 0%;
+  content: '';
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: all ease-in-out 250ms;
+  height: 3px;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav a.active {
+  color: #fff;
+}
+
+/* All text formatting */
+main {
+  width: 80%;
+  margin: 50px auto 0;
+}
+
+/* Text Formatting */
+.content {
+  flex: 0 0 48%;
+  background-color: rgba(0, 0, 0, 0.366);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.content h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ccc;
+  margin-bottom: 10px;
+  text-align:center;
+}
+
+.content p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.content ul:not(.dotpoint) {
+  padding: 0;
+  list-style-type: none;
+}
+
+.content li {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ccc;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+
+.content li a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.content li a:hover {
+  text-decoration: underline;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.content-wrapper-past {
+  display: inline;
+  justify-content: space-around;
+  flex-direction: column;
+  
+}
+
+.content-wrapper-future {
+  display: inline;
+  justify-content: space-around;
+  flex-direction: column;
+  
+}
+
+.content-wrapper-reflection {
+  display: inline;
+  justify-content: space-around;
+  flex-direction: column;
+  
+}
+/* About Bubble */
+.about{
+  margin-right: 2%;
+}
+
+.technical{
+  margin-right: 2%;
+}
+
+
+/* Navigation Bubble */
+.nav-bubble {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: initial;
+}
+
+.nav-heading {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.nav-heading a {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.nav-heading p {
+  margin: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .nav-heading {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.content.navigation{
+  width: 100%;
+}
+
+
+.navindex{
+  text-align:center;
+}
+
+#jobTable{
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#jobTable th,
+#jobTable td {
+  border: 1px solid #ffffffb1;
+  padding: 10px;
+  text-align: left;
+  color: #ffffffb1;
+}
+
+#jobTable th {
+  font-weight: 700;
+  background-color: #f5f5f52a;
+}
+
+#jobTable span {
+  font-weight:bold;
+  text-decoration: underline;
+}

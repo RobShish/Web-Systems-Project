@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Comments Page</title>
+  <link rel="stylesheet" href="websystems.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+        <div class="nameandlogo">
+        <img class="utslogo" src="/images/uts.png" alt="UTS Logo">
+        <h1 class="name">Robert Shishoian</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/index.html" >Home</a></li>
+          <li><a href="/past.html">Past</a></li>
+          <li><a href="/future.html">Future</a></li>
+          <li><a href="/comments.html" class="active">Comments</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="title">
+        <h1>Comments</h1>
+      </section>
+      <div class="content-wrapper-reflection">
+        <section class="content reflection">
+          <h2>Reflection</h2>
+          <p>
+            I designed my website as such, as I believe it ticks all the boxes of a simplistic, functional, and aesthetically pleasing design. 
+            The simplistic text bubbles attract the visitor's attention to the important content on the website. It also provides a darker backdrop so text does not get washed out by the background.
+            I also focused on the functional aspects of the website, by using a top navigation system, it brings an extremely user friendly and functional aspect to the website.
+            Overall, I aimed to produce a sleek and simple web design, which would be able to maintain the prominence of the content, while simultaneously creating a visually pleasing element to it.
+          </p>
+        </section>
+      </div>
+      <div class="content-wrapper">
+      <section class="content technical">
+        <h2>Technical</h2>
+        <p>
+            This website, designed with reference to the UTS Web Systems Assessment Outline, has four HTML documents, and one cascading style sheet (CSS)
+            The structure in my HTML files are set out in two main parts: the header, and the main. 
+        </p>
+            <p>The header contains the UTS logo, my name, and the navigation bar. 
+                It is what can be seen on every page at the top, and allows for a consistant navigation method throughout the entire website. 
+                The second part is the main, the main is where all the content can be found, within the main, there are numerous classes, divs, and sections to group certain page elements and assign them specific roles and formatting.
+            </p>
+            
+            <p>Here is about each aspect:</p>
+            <table id="jobTable">
+                <tr>
+                  <th>Aspect</th>
+                  <th>Description</th>
+                  <th>Styling</th>
+                </tr>
+              
+                <tr>
+                    <td>Body & Head</td>
+                    <td>The head and body tags are used to define the links to the CSS file, title of the page, and also define where the body is.</td>
+                    <td>The body is styled with a background image; this image is then set to cover and expand the whole page, instead of repeating, and the font is set to Arial, as it is the most common and readable font. The colour of the body text is #ffffffb1.</td>
+                </tr>
+                <tr>
+                  <td>Divisions (div)</td>
+                  <td>I primarily use the div element to group certain pieces of content together WITHIN the section, so I have better formatting control over an entire group. An example of this would be how in the <span>index.html</span> I have an overarching div called "nav-bubble" and a smaller div within that called "nav-heading", this is so I have control over the smaller bubbles individually, but also can have greater control of the entire 'Navigation Index' bubble as a whole.</td>
+                  <td>Each division I use is set to a different CSS class, an example of this is the "nameandlogo" div, where I format this div to be grouped together, and then modify their alignment to be centered, and their display to be flexible.</td>
+                </tr>
+                <tr>
+                  <td>Sections (section)</td>
+                  <td>I use sections within my website to be able to group a large section of my page together, this then allows me to seperate pieces of content on a larger scale. Although, many consider divisions and sections interchangable, I decided this would create less confusion when reading the HTML code and provide a clearer picture of how everything is grouped together.</td>
+                  <td>Sections are given different classes to group then format them, I use this to group together each information bubble. Throughout each page, I section each bubble as a content wrapper, thus allowing me to control the position, alignment, flexibility, etc of each bubble. I use this to my advantage so that in the page <span>index.html</span>, the text bubbles are side by side, however in the page <span>past.html</span>, the text bubbles are vertically aligned. This is easily completed by the use of sections, and having a different class assigned to each.</td>
+                </tr>
+                <tr>
+                  <td>Navigation Menu</td>
+                  <td>The navigation menu has four set tabs, Home, Past, Future, and Comments. This is universal across all four of the pages, and allows for a consistant navigation method. </td>
+                  <td>I styled the navigation menu with numerous classes, to begin with, the navigation utilises unordered lists to list out the names of each tab, this is then styled to be flexible, have no padding or margin, and have no list style. After that, each list item (li) has a left margin of 40px. Each page link is given a text transform to uppercase, no text decoration, positioned relatively to everything else, and is set to font size 16px, and font colour #ccc. On hover, the selector class "nav a:hover" takes control, and highlights the text to #fff. Almost simultaneously, "nav a:hover::before", positions and aligns the text, and plays the animation seen of a line going across the text. This shows to the user that the text is clickable and active. When a page is selected, the "nav a.active" class is actioned, and the current page is highlighted.</td>
+                </tr>
+                <tr>
+                    <td>Tables</td>
+                    <td>Tables are used both on this page, and in the <span>future.html</span> page, they are used to portray large pieces of information in an easily digestable manner, by having a table, users understand that what they are reading is correspondent to the particular topic, and allows for easier reference to each topic.</td>
+                    <td>The tables are styled using the CSS ID, "#jobTable", the jobTable css id, sets the width, border collapse, and bottom margin. It also contains CSS selectors to style each element of the table, both the table header and the table data are given borders, padding, aligned, and given the colour #ffffffb1. Furthermore, the seperate th selector further adjusts the headers by adding a background colour and a font weight, and the span selector highlights and bolds any text within the element.</td>
+                </tr>
+                <tr>
+                    <td>Lists</td>
+                    <td>Unordered lists are used in the <span>past.html</span> page to highlight key points on the page.</td>
+                    <td> They are given the CSS class "dotpoint", which actually strips away the CSS formatting using the 'not()' method. This allows for the formatting to reset to default, allowing for the bullet points to be shown. </td>
+                </tr>
+                <tr>
+                    <td>Paragraphs</td>
+                    <td>Paragraphs can be found throughout every page on this website, and are used to display each piece of information.</td>
+                    <td>Paragraphs are styled in this website through two classes, the first one is the content class with a selector, this class adjusts font colour, size, and weight, line height, and bottom margins. The other paragraph is used in the navigation heading element, and reduces the margins to 0.</td>
+                </tr>
+              </table>
+
+              <p>Comments have been added to the CSS file for greater code readability and to troubleshoot efficiently.</p>
+    </section>
+      <section class="content">
+        <h2>Aesthetics</h2>
+        <p>
+            The website is designed to be simplistic, and visiually appealing, without taking away from the content on the page. I aimed to produce a clear navigation system, and highlight each topic and subheading through the use of contrasting text bubbles.
+            Below are some key takaways from the aesthetics aspect of the website:
+        </p>    
+            <ul class="dotpoint">
+                <li>
+                    The website has a consistant theme, with the same blurred background to give the pages some life, while also not distracting from the text. The dark theme allows for an aesthetically pleasing look, as many bright pages are difficult to read for longer periods of time.
+                </li>
+                <li>
+                    I used the 'Arial' font from the 'Helvetica' font family. It is a 'sans-serif' font, which allows for easer readability and an appealing font to it.
+                </li>
+                <li>
+                    The consistant navigation method allows for greater aesthetic appeal, and contributes to greater useability as it can be used as a place to always go back to if the user gets lost within the pages. When hovering over the navigation bar items, a line streaks across the text, indicating that the page is selected and can be clicked to enter the page. It also provides an interesting and interactive feel to the web page. This also catches the user's attention, and it can be understood that this is a clickable element.
+                </li>
+                <li>
+                    The content within each page is held within large bubbles to visually section of each topic, and element. The title remains large and centered to clarify to the user which page they are currently on, and the important content is then sectioned by topic in bubbles. Each topic bubble is either horizontally or vertically aligned, and acts as an aesthetically pleasing way to present sub-headings for each topic. The background of each bubble also contrasts the background image which gives a sophisticated and sleek aesthetic.
+                </li>
+                <li>
+                    Padding and margins are used in almost all classes to provide distance between elements and content and avoid having an unappealing website design. Through the use of these, content is well positioned and spread amongst the page, greatly improving the simplistic design to it, and allowing for the website to look clean and tidy.
+                </li>
+                <li>
+                    The use of empty space around large blocks of text, allow for users to not feel claustrophobic and as if they have been thrown with essays to read as they enter a new page.
+                </li>
+            </ul>
+      </section>
+    </div>
+    <div class="content-wrapper-reflection">
+        <section class="content accessibility">
+          <h2>Accessibility</h2>
+          <p>
+            The website has been designed to be dynamic, accessable to both smaller and larger devices, and readable by all users.
+            </p>
+            <p>
+                Some key takeaways regarding accessability:
+            </p>
+            <ul class="dotpoint">
+                <li>
+                    The website is dynamic, text is relative meaning it can be zoomed in and out of with text sizing up and down relative to it, the website can also be accessed on different sized phones or computers.
+                </li>
+                <li>
+                    The 'alt' attribute on images are used to give visiually impaired users the ability to read about what each image is displaying/used for, without having to view the image.
+                </li>
+                <li>
+                    The use of text bubbles with a contrasting background to the background image, allow for text to not be washed out by the similar colours. This provides a backing for the text which greatly increases readability for users. Furthermore, the use of a blurred background image allows for a diffused background which is easier on the eyes, and stops too much happening on the page.
+                </li>
+                <li>
+                    A navigation index is given on the home page, so that users can understand what they'll find on each page, without having to enter it and unneccesarily read information they are not looking for.
+                </li>
+                <li>
+                    Important pieces of text are underlined and bold to emphasise their importance.
+                </li>
+            </ul>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
