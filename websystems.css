@@ -1,5 +1,5 @@
 body {
-  background-image: url('astronautbackground.jpg'); /* Found on UHD Paper https://www.uhdpaper.com/2019/07/astronaut-jellyfish-space-digital-art.html*/
+  background-image: url('/astronautbackground.jpg'); /* Found on UHD Paper https://www.uhdpaper.com/2019/07/astronaut-jellyfish-space-digital-art.html*/
   background-size: cover;
   background-repeat: no-repeat;
   margin:0;
